@@ -15,7 +15,6 @@ Group:      Qt/Qt
 License:    LICENSE
 URL:        http://example.org/
 Source0:    %{name}-%{version}.tar.bz2
-Source100:  harbour-simplecrop.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   libsailfishapp-launcher
 Requires:   pyotherside-qml-plugin-python3-qt5 >= 1.5
