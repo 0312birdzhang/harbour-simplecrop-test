@@ -71,7 +71,7 @@ rm -rf %{buildroot}
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/%{name}/py
 cd pillow
 python3 setup.py install --root $RPM_BUILD_ROOT
-mv $RPM_BUILD_ROOT/%{_libdir}/python3*/site-packages/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/py/
+mv $RPM_BUILD_ROOT/%{python3_sitelib}/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/py/
 # >> install post
 # << install post
 
@@ -85,7 +85,5 @@ desktop-file-install --delete-original       \
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
-%{_datadir}/%{name}/py/PIL
-%{_datadir}/%{name}/py/Pillow*
 # >> files
 # << files
