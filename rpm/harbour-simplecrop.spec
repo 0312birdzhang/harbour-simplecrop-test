@@ -70,7 +70,8 @@ rm -rf %{buildroot}
 %qmake5_install
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/%{name}/py
 cd pillow
-python3 setup.py install --root $RPM_BUILD_ROOT/%{_datadir}/%{name}/py
+python3 setup.py install --root $RPM_BUILD_ROOT
+mv $RPM_BUILD_ROOT/%{_libdir}/python3*/site-packages/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/py/
 # >> install post
 # << install post
 
