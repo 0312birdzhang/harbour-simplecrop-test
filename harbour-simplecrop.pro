@@ -20,7 +20,6 @@ DISTFILES += qml/harbour-simplecrop.qml \
     rpm/harbour-simplecrop.changes.in \
     rpm/harbour-simplecrop.changes.run.in \
     rpm/harbour-simplecrop.spec \
-    rpm/harbour-simplecrop.yaml \
     translations/*.ts \
     harbour-simplecrop.desktop
 
