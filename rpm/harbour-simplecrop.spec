@@ -56,7 +56,7 @@ Short description of my Sailfish OS Application
 # << build pre
 cd pillow
 python3 setup.py build
-
+cd ..
 %qmake5 
 
 make %{?_smp_mflags}
